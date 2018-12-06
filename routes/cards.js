@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
 
     // ABOUT: If no side in query string, redirect to card question
     if (!side) {
-        res.redirect(`/cards/${id}?side=question`);
+        return res.redirect(`/cards/${id}?side=question`);
     }
 
     const name = req.cookies.username;

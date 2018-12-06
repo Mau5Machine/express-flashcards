@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(cookieParser());
+app.use('/static', express.static('public'));
 
 /* 
  ** ABOUT: Set the view engine to handle pug templates
